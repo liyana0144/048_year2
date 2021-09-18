@@ -1,35 +1,55 @@
 ﻿using System;
 
-namespace ConsoleApp5_fi_2
+namespace ConsoleApp8_qz2
 {
     class Program
     {
         static void Main(string[] args)
         {
-            string n;
-            Console.WriteLine("input number that you want to find and enter END to finish");
-            do
-            {
-                n = Console.ReadLine();
-            } while (n != "END");
-            Console.WriteLine("  ");
+            Console.WriteLine("Input rose : ");
+            int Roseid = int.Parse(Console.ReadLine());
+            Console.WriteLine("Input sunflower : ");
+            int SunFlowerid = int.Parse(Console.ReadLine());
 
-            string find;
-            Console.WriteLine("input the thing that you want to solve");
-            find = Console.ReadLine();
-            if (find == "FindMax")
-            {
-                Console.WriteLine("Max value is = " + Math.Max(n));
-            }
-            else if(find == "FindMin")
-            {
-                Console.WriteLine("Min value is = " + Math.Min(n));
+        }
+    }
+    class ROSE
+    {
+        public int ID;
+        public string NameFlower;
+        public string Discription;
+        public int Amount;
+        public string Hight;
+        public string Cercumference;
 
-            }
-            else
-            {
-                Console.WriteLine("invalid");
-            }
+        public ROSE(int id, string nameflower, string discription, int amount, string hight, string cercumference)
+        {
+            this.ID = id;
+            this.NameFlower = nameflower;
+            this.Discription = discription;
+            this.Amount = amount;
+            this.Hight = hight;
+            this.Cercumference = cercumference;
+        }
+
+    }
+    class SUNFLOWER
+    {
+        public int ID;
+        public string NameFlower;
+        public string Discription;
+        public int Amount;
+        public string Hight;
+        public string Cercumference;
+
+        public SUNFLOWER(int id, string nameflower, string discription, int amount, string hight, string cercumference)
+        {
+            this.ID = id;
+            this.NameFlower = nameflower;
+            this.Discription = discription;
+            this.Amount = amount;
+            this.Hight = hight;
+            this.Cercumference = cercumference;
         }
     }
 }
